@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <title>ChatRoom</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scr.js"></script>
+</head>
+<body>
+
+<!--<button onclick="openForm('sendMessageForm')">Send Message</button>-->
+<!--<button onclick="openForm('registerForm')">Register User</button>-->
+<!--<button onclick="openForm('messagesForm')">Check Inbox</button>-->
+
+<form id="sendMessageForm">
+    <fieldset class="optimize" class="optimize1" style="float:left; margin-left: 2px">
+        <legend>Send Message</legend>
+        <label>Target User:<input class="inputOptimize" id="user" name="user" type="text" required></label>
+        <label>Message:<input class="inputOptimize" id="message" name="message" type="text" required></label>
+        <button type="button" class="inputOptimize" onclick="Message()">Send</button>
+    </fieldset>
+</form>
+
+<form id="registerForm">
+    <fieldset class="optimize" style="margin-right: 2px">
+        <legend>Register User</legend>
+        <label>Username:<input class="inputOptimize" id="username" name="username" type="text" required></label>
+        <label>Password:<input class="inputOptimize" id="password" name="password" type="password" required></label>
+        <button type="button" class="inputOptimize" onclick="register()">Register</button>
+    </fieldset>
+</form>
+
+<form id="messagesForm">
+    <fieldset class="optimize3" style="width:98.3%; margin-top: 10px">
+        <legend>Inbox</legend>
+        <label>Username:<input class="inputOptimize" id="username2" name="username" type="text" required></label>
+        <label>Password:<input class="inputOptimize" id="password2" name="password" type="password" required></label>
+        <button type="button" id="Check" class="inputOptimize" onclick="getmessage()">Check Messages</button>
+        <div id="messages"></div>
+    </fieldset>
+</form>
+
+</body>
+</html>

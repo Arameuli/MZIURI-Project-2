@@ -1,0 +1,29 @@
+body{
+    background-image: url('file:///C:/Users/nikas/OneDrive/Desktop/mess.jpg');
+}
+.optimize{
+    width: 48%;
+    margin: auto;
+}
+
+.inputOptimize{
+    width: 98%;
+}
+
+button[type="button"]{
+    width: 99%;
+    margin-top:5px;
+    margin-bottom:15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+input{
+    margin-top: 5px;
+    margin-bottom:10px;
+}
+input[id="username1"],[id="password1"]{
+    width: 99%;
+}
+#check{
+    style="width: 99.4%"
+}
